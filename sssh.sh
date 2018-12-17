@@ -15,6 +15,7 @@ if [ $# -eq 0 ] || [ $1 == '?' ] || [ $1 == '--help' ] || [ $1 == '-h' ]; then
     echo ''
     echo 'ssh tunnel example'
     echo 's -N my-vm -L 3000:localhost:3000 -L 2000:localhost:2000'
+    echo 's -N my-vm -L (output):localhost:(input)'
     echo ''
     exit 0
 fi
